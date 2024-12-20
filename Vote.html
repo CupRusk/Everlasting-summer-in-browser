@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новелла с изменяемыми кнопками</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            background-color: black;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: filter 1s ease, opacity 1s ease;
+        }
+        .background.blur {
+            filter: blur(10px);
+            opacity: 0.5;
+        }
+        .text-box {
+            background-color: rgba(105, 105, 105, 0.7);
+            display: flex;
+            flex-direction: column;
+            border-radius: 12px;
+            width: 30%;
+            padding: 20px;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+        }
+        .choice {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+        .choice:hover {
+            background: black;
+            color: white;
+        }
+        .back {
+            border: 3px solid black;
+            background-color: black;
+            width: 15%;
+            text-decoration: none;
+            color: white;
+            border-radius: 0 0 10px 10px;
+        }
+        .back:hover {
+            background-color: white;
+            color: black;
+            border-color: black;
+            transition: background 0.3s, color 0.3s;
+        }
+    </style>
+</head>
+<body>
+<!-- Фон -->
+<div id="background" class="background" style="background-image: url('camp.webp');"></div>
+
+<!-- Текстовый блок -->
+<div class="text-box">
+    <a class="back" href="index.html">Назад?</a>
+    <p id="dialogue">Главный герой Денис, едет на автобусе в соседний город.</p>
+    <a id="choice1" href="#" class="choice" onclick="nextScene(1)">Идти в лагерь</a>
+    <a id="choice2" href="#" class="choice" onclick="nextScene(2)">Смотреть на лагерь, но не идти</a>
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>

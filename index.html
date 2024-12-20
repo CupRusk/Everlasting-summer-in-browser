@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предупреждения!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .box {
+            background-color: #4a4a4a; /* Более мягкий серый цвет */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Добавлена тень */
+            max-width: 600px;
+        }
+
+        h1 {
+            color: red;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: black;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+
+        .link_in_vote {
+            display: inline-block;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 3px solid black;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .link_in_vote:hover {
+            background-color: black;
+            color: white;
+            border-color: red;
+        }
+
+        p {
+            color: black;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1>!ПРЕДУПРЕЖДЕНИЯ!</h1>
+    <h3>Данная игра ещё <span class="warning">недоделана</span>, поэтому просьба играть в полноэкранном режиме (F11).</h3>
+
+    <a class="link_in_vote" href="Vote.html">Перейти к игре</a>
+    <h3 class="warning">ДАННАЯ ИГРА ЯВЛЯЕТСЯ ФАНАТСКОЙ</h3>
+    <p>Лучшее играть с таких браузеров как...</p>
+    <p class="warning">Chrome, chrome(mobile)</p>
+
+    <p class="warning">Версия 0.1Alpha</p>
+    <p>Спасибо, что попробовали мою версию в браузере!</p>
+    <p>Найдёте ошибку... @Bonbon_ruska</p>
+</div>
+</body>
+</html>
